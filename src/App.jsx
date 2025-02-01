@@ -1,11 +1,20 @@
 import React from "react";
-import AppExchange from "./components/AppExchange";
+import Home from "./pages/Home";
+import VodInput from "./components/Vodinput";
+import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MovieInfo from "./components/MovieInfo";
 
 function App() {
   return (
-    <div>
-      <AppExchange />
-    </div>
+    <BrowserRouter>
+      <VodInput />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/info/:id" element={<MovieInfo />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
