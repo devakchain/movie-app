@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home";
-import VodInput from "./components/Vodinput";
+import VodInput from "./components/VodInput";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieInfo from "./components/MovieInfo";
